@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--
+Name: Sonu Chavakula
+Student #: 14207755
+
+-->
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Welcome to my portfolio</title>
+    
+    <style>
+        h1,h3{
+            text-align: center;
+            font-family: fantasy;
+            color: whitesmoke;
+        }
+        h2{
+            color: salmon;
+        }
+        
+        .container, .row{
+            text-align: center;
+        }
+        
+        .jpg{
+            width: 100%;
+            z-index: 0;
+        }
+        
+        #info{
+            text-align: center;
+            font-family: fantasy;
+            color: whitesmoke;
+        }
+        
+        body{
+            margin: 30px;
+            background-color: #E9E9E9;
+        }
+        .polaroid{
+            width: 520px;
+            padding: 10px 10px 20px 10px;
+            text-align: center;
+            border: 1px solid #888;
+            background-color: whitesmoke;
+            font-size: 16pt;
+            position: relative;
+            font-family: myFont;
+            transition: transform 0.5s;
+        }
+        
+        .polaroid:hover{
+            z-index: 1;
+            transform: rotate(0deg);
+            box-shadow: 0 0 10px #555;
+        }
+        
+        .rotateLeft{
+            transform: rotate(-8deg);
+        }
+        
+        .rotateRight{
+            transform: rotate(7deg);
+        }
+        
+        .inline{
+            display: inline-block;
+        }
+        
+        #polaroidSpin:hover{
+            animation: roll 2s;
+        }
+        
+        @keyframes roll{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(1720deg);
+            }
+        }
+        
+        img{
+            height: 400px;
+            width: 500px;
+        }
+        
+        @font-face{
+            src: url("fonts/PermanentMarker.ttf");
+            font-family: myFont;
+        }
+        
+        #link{
+            color: aqua;
+        }
+        
+        .yaa{
+            align-content: center;
+        }
+        
+        #form{
+            color: white;
+        }
+    </style>
+    <script>
+function myFunction() {
+    alert("Thanks for visiting my page fam!");
+}
+</script>
+    
+</head>
+
+<body>
+
+    <body class="jpg" background="wood.jpeg"></body>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Welcome to my Portfolio</h1>
+            <br>
+        
+
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Resume</h1>
+                    <embed src="Resume.pdf" width="500" height="375" type='application/pdf'>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+
+    <!-- Portfolio -->
+        
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h1>My Favorite Cars</h1>
+    <div class="inline">
+		<div class="polaroid rotateLeft inline">
+			<img src="911.jpg" alt="pic1">
+			<h2>Porche 911 Stinger</h2>
+		</div>
+		<div class="polaroid rotateRight inline">
+			<img src="r8.jpg" alt="pic2">
+			<h2>LibertyWalk Audi R8</h2>
+		</div>
+		<div class="polaroid rotateRight inline">
+			<img src="rs7.jpg" alt="pic3">
+			<h2>TAG Motorsports Audi RS7</h2>
+		</div>
+		<div class="polaroid rotateLeft inline">
+			<img src="gtr.jpg" alt="pic4">
+			<h2>LibertyWalk Nissan GTR</h2>
+		</div>
+        <div class="polaroid rotateLeft inline">
+			<img src="gts.jpg" alt="pic4">
+			<h2>Prior Design AMG GTS</h2>
+		</div>
+        <div class="polaroid rotateLeft inline">
+			<img src="a1p1.jpg" alt="pic4">
+			<h2>Mclaren P1</h2>
+		</div>
+        <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+    </div>
+    </div>
+                    
+
+    
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <br>
+                    <br>
+                    <h1>My Sports Page</h1>
+                    <a id="link" href="sportsPage.html" class="btn btn-lg btn-light" >Check it out here!</a>
+                    <br><br>
+                    <br><br>
+                    <button class="yaa" onclick="myFunction()">Click here for a message from the owner of this page</button>
+                    <br><br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <footer>
+        <div class="container">
+            <form method="GET" id="form">
+                Your name:<br><input type="text" name="realname"><br><br>
+                Your email:<br><input type="text" name="email"><br><br>
+                Your comments:<br>
+                <textarea name="comments" rows="15" cols="50">
+                </textarea> <br><br>
+                <input type="submit" value="Submit"> 
+
+            </form>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <p id="info">Columbia, MO 65211
+                        <br>University of Missouri-Columbia</p>
+                    <ul class="list">
+                        <li id="info"><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a id="link" href="mailto:sonu.13@hotmail.com">sonu.13@hotmail.com</a>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+   
+
+</body>
+
+</html>
